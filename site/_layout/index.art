@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="_layout/css/site.css">
+</head>
+
+<body class="ppmui-site">
+  {{include './header'}}
+
+  <div class="common-content">
+    <div class="page-center relative">
+      {{include './nav'}} {{include './main'}}
+    </div>
+  </div>
+
+</body>
+
+</html>
