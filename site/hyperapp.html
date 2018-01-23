@@ -96,7 +96,7 @@
         </li>
         
         <li>
-          <a href="hyperapp.html" >hyperapp</a>
+          <a href="hyperapp.html" class="now" >hyperapp</a>
         </li>
         
       </ul>
@@ -104,7 +104,80 @@
     
   </ul>
 </div> <div class="common-main" id="docs">
-  
+  <h2>Hyperapp</h2>
+<div class="docs-html"><div id="view"></div>
+
+<script>
+var h = hyperapp.h;
+var app = hyperapp.app;
+
+var state = {
+  count: 0
+}
+
+var actions = {
+  down: (function () {
+    return function (state) {
+      return { count: state.count - 1 };
+    };
+  }),
+  up: (function(){
+    return function(state){
+      return {count: state.count + 1 };
+    }
+  })
+}
+
+var view = function(state, actions){
+  return h(
+    'div', {}, [
+      h('button', {onclick:actions.down}, '-'),
+      h('strong',{}, state.count),
+      h('button', {onclick:actions.up}, '+'),
+    ]
+  )
+}
+
+app(state, actions, view, document.getElementById('view'))
+</script></div>
+<pre class="docs-code language-html"><code><span class="hljs-variable">&lt;div id="view"&gt;</span>&lt;/div&gt;
+
+<span class="hljs-variable">&lt;script&gt;</span>
+var h = hyperapp.h;
+var app = hyperapp.app;
+
+var <span class="hljs-keyword">state</span> = {
+  count: <span class="hljs-number">0</span>
+}
+
+var actions = {
+  down: (function () {
+    return function (<span class="hljs-keyword">state</span>) {
+      return { count: <span class="hljs-keyword">state</span>.count - <span class="hljs-number">1</span> };
+    };
+  }),
+  up: (function(){
+    return function(<span class="hljs-keyword">state</span>){
+      return {count: <span class="hljs-keyword">state</span>.count + <span class="hljs-number">1</span> };
+    }
+  })
+}
+
+var view = function(<span class="hljs-keyword">state</span>, actions){
+  return h(
+    'div', {}, [
+      h('button', {onclick:actions.down}, '-'),
+      h('strong',{}, <span class="hljs-keyword">state</span>.count),
+      h('button', {onclick:actions.up}, '+'),
+    ]
+  )
+}
+
+app(<span class="hljs-keyword">state</span>, actions, view, document.getElementById('view'))
+&lt;/script&gt;</code></pre>
+
+<p>参考：<a href="https://github.com/hyperapp/hyperapp/tree/master/docs">docs</a></p>
+
 </div>
     </div>
   </div>

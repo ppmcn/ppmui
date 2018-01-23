@@ -53,7 +53,7 @@ let data = {
     base: ['font', 'button'],
     layout: ['margin', 'padding', 'column', 'border'],
     form: ['input', 'textarea', 'select', 'radio', 'checkbox'],
-    js: ['birthday']
+    js: ['birthday', 'hyperapp']
   }
 };
 

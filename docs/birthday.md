@@ -1,8 +1,3 @@
----
-title: birthday
-tags: birthday
----
-
 ## birthday
 
 ```js
