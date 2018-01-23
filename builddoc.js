@@ -65,7 +65,7 @@ let data = {
     form: ['radio', 'checkbox', 'input', 'textarea', 'select'],
     data: ['table', 'page'],
     notice: ['alert', 'confirm', 'message', 'dialog'],
-    js: ['birthday', 'hyperapp']
+    plugins: ['birthday', 'hyperapp']
   }
 };
 
