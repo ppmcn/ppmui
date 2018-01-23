@@ -47,7 +47,7 @@ body.ppmui-site {
 }
 
 #docs .docs-html {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #docs .docs-code {
@@ -96,11 +96,9 @@ body.ppmui-site {
 .common-header {
   background-color: #2DBF7D;
 }
-.theme-teacher .common-header {
-  background-color: #45A1F5;
-}
 .common-header a{
   text-decoration: none;
+  color: #fff;
 }
 .common-header a:hover{
   cursor: pointer;
@@ -123,10 +121,6 @@ body.ppmui-site {
 .common-header-user img{
   border-radius: 50%;
   margin-right: 5px;
-}
-
-.common-header a {
-  color: #ECF1F5;
 }
 
 .common-header .c7cbbf2 {
