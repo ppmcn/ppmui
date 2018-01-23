@@ -4,6 +4,8 @@
 <a class="button button-blue">右边距20px</a>
 <span class="padding-right-20"></span>
 <a class="button button-green">按钮</a>
+<span class="padding-left-35"></span>
+<a class="button button-blue">左边距35px</a>
 ```
 
 ## Class

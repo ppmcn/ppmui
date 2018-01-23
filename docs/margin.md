@@ -3,6 +3,7 @@
 ```html
 <a class="margin-right-20 button button-blue">右边距20px</a>
 <a class="button button-green">按钮</a>
+<a class="margin-left-35 button button-blue">左边距35px</a>
 ```
 
 ## Class

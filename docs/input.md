@@ -1,8 +1,3 @@
----
-title: input
-tags: input，uikit
---- 
-
 ## input color
 
 ``` html  
@@ -32,19 +27,4 @@ tags: input，uikit
  <br>
 <input type="text" class="smaller" placeholder="请输入用户名"> 
 </article>
-  
-```   
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  ```
-
-
+```

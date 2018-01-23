@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title></title>
   <link rel="stylesheet" href="_layout/css/site.css">
+  <link rel="stylesheet" href="ppmui/ppmui-1.0.5.css">
+  <script src="ppmui/ppmui-1.0.5.js"></script>
 </head>
 
 <body class="ppmui-site">

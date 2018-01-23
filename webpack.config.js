@@ -4,19 +4,21 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const env = process.env.NODE_ENV
 
 const version = (env === 'production') ? `${packageJson.version}-min` : `${packageJson.version}`
-const name = `uikit-${version}`
+const name = `${packageJson.name}-${version}`
 
 const extractSass = new ExtractTextPlugin({
   filename: `${name}.css`,
-  disable: env === "development"
+  // disable: env === "development"
+  disable: false
 });
 
-
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: `${name}.js`
+const commonConfig = {
+  entry: {
+    dist: ['./src/index.js']
+  },
+  resolve: {
+    mainFiles: ['index'],
+    extensions: ['.js', '.json', '.scss']
   },
   module: {
     rules: [
@@ -26,7 +28,13 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
+            "presets": [
+              ["@babel/preset-env", {
+                "targets": {
+                  "browsers": ["last 2 versions", "safari >= 7", "ie >= 9"]
+                }
+              }]
+            ]
           }
         }
       },
@@ -36,7 +44,11 @@ module.exports = {
           use: [{
             loader: "css-loader"
           }, {
-            loader: "sass-loader"
+            loader: "sass-loader",
+            options: {
+              outputStyle: 'expanded',
+              includePaths: ['theme/index.scss']
+            }
           }],
           // use style-loader in development
           fallback: "style-loader"
@@ -63,3 +75,18 @@ module.exports = {
     port: 9000
   }
 }
+
+const distConfig = Object.assign({}, commonConfig, {
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: `${name}.js`
+  }
+})
+const siteConfig = Object.assign({}, commonConfig, {
+  output: {
+    path: path.resolve(__dirname, 'site/ppmui'),
+    filename: `${name}.js`
+  }
+})
+
+module.exports = [distConfig, siteConfig];

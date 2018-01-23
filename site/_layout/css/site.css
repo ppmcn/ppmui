@@ -1,4 +1,3 @@
-
 body.ppmui-site {
   color: #333;
   margin: 0;
@@ -7,11 +6,17 @@ body.ppmui-site {
   font-family: PingHei,"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
 }
 
-.ppmui-site * {
-  margin: 0;
-  padding: 0;
+.ppmui-site *  {
+  
   font-weight: 400;
   list-style: none;
+}
+.ppmui-site h1,
+.ppmui-site ul,
+.ppmui-site li,
+.ppmui-site p {
+  margin: 0;
+  padding: 0;
 }
 
 .ppmui-site .page-center {
@@ -50,6 +55,14 @@ body.ppmui-site {
   background-color: #f7faff;
   line-height: 18px;
   padding: 15px;
+}
+#docs .docs-html .col-num{
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: #e2e9f0;
+  margin-bottom: 10px;
 }
 
 #docs .docs-table {
@@ -249,7 +262,6 @@ body.ppmui-site {
 .common-main {
   margin-left: 150px;
   padding: 20px 0 0 20px;
-  transition: margin-left 0.3s;
 }
 .common-nav-min .common-nav {
   width: 60px;
@@ -409,3 +421,4 @@ body.ppmui-site {
   height: auto;
 }
 
+.hljs{display:block;overflow-x:auto;padding:0.5em;background:#eaeef3}.hljs{color:#00193a}.hljs-keyword,.hljs-selector-tag,.hljs-title,.hljs-section,.hljs-doctag,.hljs-name,.hljs-strong{font-weight:bold}.hljs-comment{color:#738191}.hljs-string,.hljs-title,.hljs-section,.hljs-built_in,.hljs-literal,.hljs-type,.hljs-addition,.hljs-tag,.hljs-quote,.hljs-name,.hljs-selector-id,.hljs-selector-class{color:#0048ab}.hljs-meta,.hljs-subst,.hljs-symbol,.hljs-regexp,.hljs-attribute,.hljs-deletion,.hljs-variable,.hljs-template-variable,.hljs-link,.hljs-bullet{color:#4c81c9}.hljs-emphasis{font-style:italic}

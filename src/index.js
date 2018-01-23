@@ -1,2 +1,5 @@
-import '../modules/index.js'
-import '../theme/index.scss'
+import '../modules/font'
+import '../modules/button'
+import '../modules/margin'
+import '../modules/column'
+import '../modules/input'

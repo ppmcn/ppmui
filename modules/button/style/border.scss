@@ -16,11 +16,10 @@
     $btn-color: nth($btn-color, 3);
     $btn-name-namespace: $btn-namespace + '-' + $btn-name;
     &#{$btn-name-namespace} {
-      border-color: #DFDFDF;
       color: $btn-background;
       &:hover{
-        // background: desaturate($btn-background, 10%);
-        // color: $btn-color;
+        background: desaturate($btn-background, 10%);
+        color: $btn-color;
         border-color: desaturate($btn-background, 10%);
       }
       &:active {
