@@ -39,7 +39,7 @@ $btn-colors:  (blue $blue #FFF)
               (green $green #FFF)
               (orange $orange #FFF)
               (red $red #FFF)
-              (while #FFF black)
+              (white #fff $blue)
               (grey $grey #FFF) 
               !default;
 
@@ -58,5 +58,5 @@ $btn-colors:  (blue $blue #FFF)
 */
 $btn-sizes: (smaller 82px 26px 5px 14px)
             (small 82px 30px 5px 14px)
-            (large 140px 34px 10px 16px)
+            (large 120 36px 10px 16px)
             (larger 340px 44px 14px 16px) !default;

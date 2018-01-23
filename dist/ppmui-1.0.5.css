@@ -230,18 +230,18 @@
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.button-while {
-  background-color: #FFF;
-  border-color: #FFF;
-  color: black;
+.button-white {
+  background-color: #fff;
+  border-color: #fff;
+  color: #56BBFF;
 }
 
-.button-while:hover {
+.button-white:hover {
   background-color: white;
-  color: black;
+  color: #56BBFF;
 }
 
-.button-while:active {
+.button-white:active {
   background-color: white;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
@@ -283,10 +283,10 @@
 }
 
 .button-large {
-  min-width: 118px;
+  min-width: 98px;
   padding: 0 10px;
-  height: 32px;
-  line-height: 32px;
+  height: 34px;
+  line-height: 34px;
   font-size: 16px;
 }
 
@@ -372,17 +372,17 @@
   border-color: #f02323;
 }
 
-.button-border.button-while {
-  color: #FFF;
+.button-border.button-white {
+  color: #fff;
 }
 
-.button-border.button-while:hover {
+.button-border.button-white:hover {
   background: white;
-  color: black;
+  color: #56BBFF;
   border-color: white;
 }
 
-.button-border.button-while:active {
+.button-border.button-white:active {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
   border-color: #e0e0e0;
 }
@@ -404,6 +404,10 @@
 
 .button-radius {
   border-radius: 200px;
+}
+
+.button-white:hover {
+  color: #25A7FF;
 }
 .margin-0 {
   margin: 0px !important;
@@ -1068,11 +1072,10 @@
 * Disabled State
 *
 */
-.input-disabled,
-.input-disabled:hover {
-  background: #CDCDCD !important;
-  border-color: #CDCDCD !important;
-  color: #fff !important;
+.input-disabled, .input[disabled] {
+  background: #f3f3f3 !important;
+  border-color: #dcdcdc !important;
+  color: #999 !important;
   cursor: not-allowed;
 }
 
@@ -1122,6 +1125,20 @@
   border-color: #f5a342;
 }
 
+.input-red {
+  border-color: #F45C5C;
+  color: #F45C5C;
+}
+
+.input-red:hover {
+  border-color: #f78c8c;
+  color: #F45C5C;
+}
+
+.input-red:active, .input-red:focus {
+  border-color: #eb6565;
+}
+
 .input-grey {
   border-color: #bababa;
   color: #bababa;
@@ -1141,37 +1158,133 @@
 *
 */
 .input-smaller {
-  width: 18px;
+  width: 30px;
   padding: 0 4px;
-  height: 18px;
-  line-height: 18px;
-  font-size: 14px;
-}
-
-.input-small {
-  width: 68px;
-  padding: 0 8px;
   height: 22px;
   line-height: 22px;
   font-size: 12px;
 }
 
+.input-small {
+  width: 50px;
+  padding: 0 4px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+}
+
 .input-large {
-  width: 250px;
+  width: 310px;
   padding: 0 14px;
-  height: 28px;
-  line-height: 28px;
+  height: 38px;
+  line-height: 38px;
   font-size: 16px;
 }
 
 .input-larger {
-  width: 470px;
+  width: 370px;
   padding: 0 14px;
-  height: 44px;
-  line-height: 44px;
+  height: 34px;
+  line-height: 34px;
   font-size: 16px;
 }
 
 .input-radius {
   border-radius: 200px;
+}
+@charset "UTF-8";
+.page {
+  user-select: none;
+  line-height: 24px;
+}
+
+.page a {
+  color: #000;
+  padding: 0;
+  min-width: 24px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 0px;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  /*ie678 解决汉子和数字上下不对齐*/
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.page a.now, .page a:hover {
+  background-color: #56BBFF;
+  color: #fff;
+}
+
+.page a.disabled {
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.page.page-right {
+  text-align: right;
+}
+
+.page.page-right a {
+  margin-right: 0;
+  margin-left: -0px;
+}
+
+.page .page-prev i,
+.page .page-next i {
+  width: 10px;
+  height: 9px;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+.page .page-next i {
+  background-position: -14px -60px;
+}
+
+.page .page-go {
+  border: 1px solid #DAE1E8;
+  padding: 0 5px;
+  margin-left: 5px;
+}
+
+.page .page-input {
+  width: 20px;
+  padding: 0 6px;
+  border: 1px solid #DAE1E8;
+  height: 24px;
+  outline: none;
+}
+
+/*兼容*/
+.ie6 .page a.disabled {
+  background-color: transparent !important;
+  color: #999;
+}
+.table {
+  width: 100%;
+  color: #333;
+  font-size: 14px;
+  border: 1px solid #e2e9f0;
+  background-color: #fff;
+  text-align: left;
+}
+
+.table th {
+  padding: 10px 0 10px 20px;
+  color: #333;
+  background-color: #F4F7FA;
+  border-bottom: 1px solid #e2e9f0;
+}
+
+.table td {
+  padding: 10px 0 10px 20px;
+  vertical-align: middle;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #e2e9f0;
 }

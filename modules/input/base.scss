@@ -29,11 +29,10 @@
 *
 */
 
-#{$input-namespace}-disabled,
-#{$input-namespace}-disabled:hover {
-  background: $disabled !important;
-  border-color: $disabled !important;
-  color: #fff !important;
+#{$input-namespace}-disabled,#{$input-namespace}[disabled]{
+  background: $input-disabled !important;
+  border-color: #dcdcdc !important;
+  color: #999 !important;
   cursor: not-allowed;
 }
 

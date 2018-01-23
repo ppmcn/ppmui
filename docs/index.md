@@ -1,6 +1,6 @@
 ## 介绍
 
-```html
+```html~
 <!DOCTYPE html>
 <html lang="zh-CN">
 

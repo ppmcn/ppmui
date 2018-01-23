@@ -1,30 +1,30 @@
 ## input color
 
 ``` html  
-<article>
- <input class="input" type="text" placeholder="主题色">
-</article>
-<article>
+<input class="input" type="text" placeholder="主题色">
 <input type="text" class="input input-blue" value="blue" placeholder="blue">
+<div class="padding-bottom-10"></div>
 <input type="text" class="input input-green" value="green" placeholder="green">
 <input type="text" class="input input-orange" value="orange" placeholder="orange">
-<input type="text" class="input input-grey" value="grey" placeholder="grey"> 
-</article>
+<div class="padding-bottom-10"></div>
+<input type="text" class="input input-red" value="red" placeholder="red">
+<input type="text" class="input input-grey" value="grey" placeholder="grey">
+<div class="padding-bottom-10"></div>
+<input type="text" class="input input-disabled " value="disabled" placeholder="disabled">
+<input type="text" class="input" disabled value="disabled" placeholder="disabled">
+
 ```
 
 ## Input Size
 
 ``` html  
-<article>
-<input type="text" class="input input-larger" placeholder="请输入用户名">
-<br>
-<br>
-<input type="text" class="input input-large" placeholder="请输入用户名">
- <br>
- <br>
-<input type="text" class="small" placeholder="请输入用户名">
- <br>
- <br>
-<input type="text" class="smaller" placeholder="请输入用户名"> 
-</article>
+<div>
+  <input type="text" class="input input-smaller" placeholder="用户">
+  <div class="padding-bottom-10"></div>
+  <input type="text" class="input input-small" placeholder="用户名">
+  <div class="padding-bottom-10"></div>
+  <input type="text" class="input input-large" placeholder="请输入用户名">
+  <div class="padding-bottom-10"></div>
+  <input type="text" class="input input-larger" placeholder="请输入用户名">
+</div>
 ```

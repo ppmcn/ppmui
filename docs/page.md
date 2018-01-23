@@ -7,84 +7,36 @@ tags: page,uikit
 
 ``` html  
 <div class="page">
-  <a class="disabled">上一页</a>
-  <a class="now">1</a>
+  <a class="disabled" href="javascript:;"><</a>
+  <a href="#">1</a>
   <a href="#">2</a>
-  <a>3</a>
-  <a>4</a>
-  <a>5</a>
-  <a>6</a>
-  <a>7</a>
-  <a>8</a>
-  <a>9</a>
-  <a>10</a>
-  <a>下一页</a>
-</div>
-<div class="page">
-  <a>上一页</a>
-  <a>下一页</a>
+  <a href="#">3</a>
+  <a class="now" href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">...</a>
+  <a href="#">10</a>
+  <a href="#">></a>
+  <span>转到：<input class="page-input" type="text" name="page"> 页</span>
+  <a href="javascript:;" class="page-go">确定</a>
 </div>
 ```
 
-## page page-right
+## page-right
 
 ```html  
 <div class="page page-right">
-  <a class="disabled">上一页</a>
-  <a class="now">1</a>
-  <a href="#">2</a>
-  <a>3</a>
-  <a>4</a>
-  <a>5</a>
-  <a>6</a>
-  <a>7</a>
-  <a>8</a>
-  <a>9</a>
-  <a>10</a>
-  <a>下一页</a>
-</div>
-<div class="page page-right">
-  <a>上一页</a>
-  <a>下一页</a>
-</div>
-```
-
-## page align-right
-
-```html 
-<div class="pages">
-  <div class="pages align-right">
-    <div class="page page-right">
-      <a class="page-prev">
-        <i>
-        </i>
-      </a>
-      <a class="now">1</a>
-      <a>2</a>
-      <a>3</a>
-      <a>4</a>
-      <a>5</a>
-      <a>6</a>
-      <a>7</a>
-      <a>8</a>
-      <a>9</a>
-      <a>10</a>
-      <a class="page-next">
-        <i>
-        </i>
-      </a>
-    </div>
-    <div class="page page-right margin-left-30">
-      <a class="page-prev">
-        <i>
-        </i>
-      </a>
-      <a class="page-next">
-        <span class="margin-right-5">下一页</span>
-        <i>
-        </i>
-      </a>
-    </div>
-  </div>
+  <a href="javascript:;"><</a>
+  <a href="#">1</a>
+  <a href="#">...</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">7</a>
+  <a href="#">8</a>
+  <a href="#">9</a>
+  <a class="now" href="#">10</a>
+  <a class="disabled"  href="#">></a>
+  <span>转到：<input class="page-input" type="text" name="page"> 页</span>
+  <a href="javascript:;" class="page-go">确定</a>
 </div>
 ```

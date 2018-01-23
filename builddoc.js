@@ -37,11 +37,21 @@ renderer.heading = function (text, level) {
 }
 
 renderer.code = function (code, lang) {
-  var language = lang && (' language-' + lang) || '';
-  var rHtml = `<div class="docs-html">${code}</div>` + '\r\n';
-  var rCode = '<pre class="docs-code' + language + '">'
+  var rHtml, rCode, language;
+  // 包含 ~ 不生成HTML
+  if (lang.includes('~')) {
+    rHtml = '';
+    lang = lang.replace('~', '')
+  } else {
+    rHtml = `<div class="docs-html">${code}</div>` + '\r\n';
+  }
+  language = lang && (' language-' + lang) || '';
+  rCode = '<pre class="docs-code' + language + '">'
     + '<code>' + highlight.highlightAuto(code).value + '</code>'
     + '</pre>\r\n';
+
+
+
   return rHtml + rCode + '\r\n';
 }
 
@@ -50,9 +60,11 @@ renderer.table = function (header, body) {
 }
 let data = {
   nav: {
-    base: ['font', 'button'],
+    base: ['index', 'font', 'button'],
     layout: ['margin', 'padding', 'column', 'border'],
-    form: ['input', 'textarea', 'select', 'radio', 'checkbox'],
+    form: ['radio', 'checkbox', 'input', 'textarea', 'select'],
+    data: ['table', 'page'],
+    notice: ['alert', 'confirm', 'message', 'dialog'],
     js: ['birthday', 'hyperapp']
   }
 };

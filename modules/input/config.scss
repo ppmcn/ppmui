@@ -23,6 +23,7 @@ $input-border-width: 1px !default;
 $input-border-color: #D0D0D0 !default;
 $input-color: $text !default;
 $input-radius: $radius !default;
+$input-disabled: #f3f3f3;
 
 /*
 * Input Colors
@@ -33,6 +34,7 @@ $input-radius: $radius !default;
 $input-colors:  (blue $blue $blue)
                 (green $green $green)
                 (orange $orange $orange)
+                (red $red $red)
                 (grey $grey $grey) !default;
 
 /*
@@ -41,7 +43,7 @@ $input-colors:  (blue $blue $blue)
 * (name width height padding font-size)
 * smallest smaller small default large larger largest
 */
-$input-sizes:   (smaller 28px 20px 4px 14px)
-                (small 86px 24px 8px 12px) 
-                (large 280px 30px 14px 16px)
-                (larger 500px 46px 14px 16px) !default;
+$input-sizes:   (smaller 40px 24px 4px 12px)
+                (small 60px 36px 4px 14px) 
+                (large 340px 40px 14px 16px)
+                (larger 400px 36px 14px 16px) !default;
