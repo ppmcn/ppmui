@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="ppmui/ppmui-1.0.5.css">
+  <script src="ppmui/ppmui-1.0.5.js"></script>
+</head>
+
+<body class="ppmui-site">
+  <div class="common-header">
+  <div class="page-center">
+    <h1 class="doc-logo">UIKit</h1>
+  </div>
+</div>
+
+
+  <div class="common-content">
+    <div class="page-center relative">
+      <div class="common-nav">
+  <ul class="u-menu">
+    
+    <li>
+      <strong>base</strong>
+      <ul>
+        
+        <li>
+          <a href="font.html" >font</a>
+        </li>
+        
+        <li>
+          <a href="button.html" >button</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>layout</strong>
+      <ul>
+        
+        <li>
+          <a href="margin.html" >margin</a>
+        </li>
+        
+        <li>
+          <a href="padding.html" >padding</a>
+        </li>
+        
+        <li>
+          <a href="column.html" >column</a>
+        </li>
+        
+        <li>
+          <a href="border.html" >border</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>form</strong>
+      <ul>
+        
+        <li>
+          <a href="input.html" >input</a>
+        </li>
+        
+        <li>
+          <a href="textarea.html" >textarea</a>
+        </li>
+        
+        <li>
+          <a href="select.html" >select</a>
+        </li>
+        
+        <li>
+          <a href="radio.html" >radio</a>
+        </li>
+        
+        <li>
+          <a href="checkbox.html" >checkbox</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>js</strong>
+      <ul>
+        
+        <li>
+          <a href="birthday.html" >birthday</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+</div> <div class="common-main" id="docs">
+  <h2>popup</h2>
+<div class="docs-html"><div class="column">
+  <article class="col-2-1">
+    <div class="notice popup margin-right-10">
+      <!-- <i class="icon close"></i> -->
+      <h1>恭喜你</h1>
+      <p>你获得了一个小面包,请好好享用。</p>
+      <div class="margin-top-20 align-right">
+        <a class="button button-disabled button-small">不要</a>
+        <a class="button button-orange button-small">真酷</a></div>
+    </div>
+  </article>
+  <article class="col-2-1">
+    <div class="notice popup green margin-left-10">
+      <!-- <i class="icon close"></i> -->
+      <h1>恭喜你</h1>
+      <p>你获得了一个小面包,请好好享用。</p>
+      <div class="margin-top-20 align-right">
+        <a class="button disabled">不要</a>
+        <a class="button ">真酷</a></div>
+    </div>
+  </article>
+</div></div>
+<pre class="docs-code language-html"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-2-1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"notice popup margin-right-10"</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &lt;i class="icon close"&gt;&lt;/i&gt; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>恭喜你<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>你获得了一个小面包,请好好享用。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"margin-top-20 align-right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-disabled button-small"</span>&gt;</span>不要<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-orange button-small"</span>&gt;</span>真酷<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-2-1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"notice popup green margin-left-10"</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &lt;i class="icon close"&gt;&lt;/i&gt; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>恭喜你<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>你获得了一个小面包,请好好享用。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"margin-top-20 align-right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button disabled"</span>&gt;</span>不要<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span>&gt;</span>真酷<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+
+</div>
+    </div>
+  </div>
+
+</body>
+
+</html>

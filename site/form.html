@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="ppmui/ppmui-1.0.5.css">
+  <script src="ppmui/ppmui-1.0.5.js"></script>
+</head>
+
+<body class="ppmui-site">
+  <div class="common-header">
+  <div class="page-center">
+    <h1 class="doc-logo">UIKit</h1>
+  </div>
+</div>
+
+
+  <div class="common-content">
+    <div class="page-center relative">
+      <div class="common-nav">
+  <ul class="u-menu">
+    
+    <li>
+      <strong>base</strong>
+      <ul>
+        
+        <li>
+          <a href="font.html" >font</a>
+        </li>
+        
+        <li>
+          <a href="button.html" >button</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>layout</strong>
+      <ul>
+        
+        <li>
+          <a href="margin.html" >margin</a>
+        </li>
+        
+        <li>
+          <a href="padding.html" >padding</a>
+        </li>
+        
+        <li>
+          <a href="column.html" >column</a>
+        </li>
+        
+        <li>
+          <a href="border.html" >border</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>form</strong>
+      <ul>
+        
+        <li>
+          <a href="input.html" >input</a>
+        </li>
+        
+        <li>
+          <a href="textarea.html" >textarea</a>
+        </li>
+        
+        <li>
+          <a href="select.html" >select</a>
+        </li>
+        
+        <li>
+          <a href="radio.html" >radio</a>
+        </li>
+        
+        <li>
+          <a href="checkbox.html" >checkbox</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>js</strong>
+      <ul>
+        
+        <li>
+          <a href="birthday.html" >birthday</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+</div> <div class="common-main" id="docs">
+  <h2>form</h2>
+<div class="docs-html">
+<form class="form" action="javascript:;">
+  <fieldset>
+    <label class="long">公司名称：</label>
+    <input type="text" class="input" placeholder="请填写内容"></fieldset>
+  <fieldset>
+    <label class="long">职位头衔：</label>
+    <input type="text" class="input" placeholder="请填写内容"></fieldset>
+  <fieldset>
+    <label class="long">在职时间：</label>
+    <input type="text" class="input" placeholder="开始时间">
+    <input type="text" class="input" placeholder="结束时间"></fieldset>
+  <fieldset>
+    <label class="long">老师简介：</label>
+    <input type="text" class="input" placeholder="请填写内容"></fieldset>
+  <fieldset>
+    <label class="long">备注：</label>
+    <textarea name="name" rows="" placeholder="请输入文字"></textarea>
+  </fieldset>
+  <fieldset>
+    <label class="long"></label>
+    <input type="submit" value="提交" class="button green large">
+    <input type="reset" value="重置" class="button grey large"></fieldset>
+</form></div>
+<pre class="docs-code language-html"><code>
+&lt;form <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form"</span> action=<span class="hljs-string">"javascript:;"</span>&gt;
+  &lt;fieldset&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"long"</span>&gt;公司名称：&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input"</span> placeholder=<span class="hljs-string">"请填写内容"</span>&gt;&lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"long"</span>&gt;职位头衔：&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input"</span> placeholder=<span class="hljs-string">"请填写内容"</span>&gt;&lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"long"</span>&gt;在职时间：&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input"</span> placeholder=<span class="hljs-string">"开始时间"</span>&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input"</span> placeholder=<span class="hljs-string">"结束时间"</span>&gt;&lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"long"</span>&gt;老师简介：&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input"</span> placeholder=<span class="hljs-string">"请填写内容"</span>&gt;&lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"long"</span>&gt;备注：&lt;/label&gt;
+    &lt;textarea name=<span class="hljs-string">"name"</span> rows=<span class="hljs-string">""</span> placeholder=<span class="hljs-string">"请输入文字"</span>&gt;&lt;/textarea&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"long"</span>&gt;&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"submit"</span> value=<span class="hljs-string">"提交"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button green large"</span>&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"reset"</span> value=<span class="hljs-string">"重置"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button grey large"</span>&gt;&lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+
+
+</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
