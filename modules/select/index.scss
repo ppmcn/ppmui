@@ -1,3 +1,42 @@
-select.select {
-  -webkit-appearance: none;
+.select {
+  position: relative;
+  width: 40px;
+  height: 26px;
+  overflow: hidden;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #dddee1;
 }
+.select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  border: none;
+  height: 100%;
+  line-height: 100%;
+  width: 180% \9;
+}
+// .select::after {
+//   content: '\00a0';
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   right: 0px;
+//   top: 50%;
+//   margin-top: -2px;
+//   border: 5px solid transparent;
+//   border-top-color: #808390;
+// }
+// .select::before {
+//   content: '\00a0';
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   width: 18px;
+//   height: 100%;
+//   background-color: #fff;
+// }
+
+.select select::-ms-expand { display: none; }
