@@ -1,8 +1,3 @@
----
-title: form
-tags: form,uikit
----
-
 ## form
 
 ``` html

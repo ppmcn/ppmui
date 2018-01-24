@@ -1,0 +1,62 @@
+@import "../../theme/index.scss";
+
+input.checkbox {
+  visibility: hidden;
+  position: relative;
+  top: 0px;
+  margin:0 4px 0 0;
+  width: 14px;
+  height: 14px;
+}
+
+// 边框样式
+input.checkbox::before {
+  content: ' ';
+  position: absolute;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #CDCDCD;
+  visibility: visible;
+}
+
+// 选中后边框样式
+input.checkbox:checked::before {
+  border: 1px solid $blue;
+  background-color: $blue;
+}
+
+// 圆心状态
+input.checkbox::after {
+  content: ' ';
+  position: absolute;
+  left: 2px;
+  top: -1px;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  visibility: visible;
+  font-size: 12px;
+}
+
+// 选中后圆心状态
+input.checkbox:checked::after {
+  content: '\2713';
+  color: #fff;
+}
+
+
+// 禁用状态
+input.checkbox:disabled {
+  cursor: not-allowed;
+}
+input.checkbox:disabled::before,
+input.checkbox:disabled:checked::before{
+  border: 1px solid #CDCDCD;
+  background-color: #EEE;
+}
+
+// 选中后禁用圆心状态
+input.checkbox:disabled:checked::after{
+  color: #aaa;
+}

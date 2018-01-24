@@ -1,0 +1,61 @@
+@import "../../theme/index.scss";
+
+input.radio {
+  visibility: hidden;
+  position: relative;
+  top: 0px;
+  margin:0 4px 0 0;
+  width: 14px;
+  height: 14px;
+}
+
+// 边框样式
+input.radio::before {
+  content: ' ';
+  position: absolute;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  border: 1px solid #CDCDCD;
+  visibility: visible;
+}
+
+// 选中后边框样式
+input.radio:checked::before {
+  border: 1px solid $blue;
+}
+
+// 圆心状态
+input.radio::after {
+  content: ' ';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  visibility: visible;
+}
+
+// 选中后圆心状态
+input.radio:checked::after {
+  background-color: $blue;
+}
+
+
+// 禁用状态
+input.radio:disabled {
+  cursor: not-allowed;
+}
+input.radio:disabled::before,
+input.radio:disabled:checked::before{
+  border: 1px solid #CDCDCD;
+  background-color: #EEE;
+}
+
+// 选中后禁用圆心状态
+input.radio:disabled:checked::after{
+  background-color: #aaa;
+}
