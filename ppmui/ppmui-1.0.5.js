@@ -79,9 +79,9 @@ module.exports = __webpack_require__(1);
 
 __webpack_require__(2);
 
-__webpack_require__(5);
+__webpack_require__(3);
 
-__webpack_require__(6);
+__webpack_require__(4);
 
 __webpack_require__(7);
 
@@ -93,22 +93,21 @@ __webpack_require__(10);
 
 __webpack_require__(11);
 
-__webpack_require__(27);
-
 __webpack_require__(12);
 
 __webpack_require__(13);
 
+__webpack_require__(14);
+
+__webpack_require__(16);
+
+__webpack_require__(17);
+
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-__webpack_require__(3);
-
-__webpack_require__(4);
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 3 */
@@ -118,9 +117,14 @@ __webpack_require__(4);
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+
+
+__webpack_require__(5);
+
+__webpack_require__(6);
 
 /***/ }),
 /* 5 */
@@ -172,6 +176,37 @@ __webpack_require__(4);
 
 /***/ }),
 /* 13 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(15);
+
+$(function () {
+  $('.select').on('click', function () {});
+});
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports) {
 
 function h(name, props) {
@@ -464,25 +499,6 @@ window.hyperapp = {
   h: h,
   app: app
 };
-
-/***/ }),
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

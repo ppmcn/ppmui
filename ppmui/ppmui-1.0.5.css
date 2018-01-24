@@ -1,3 +1,221 @@
+@charset "UTF-8";
+/**
+ * reset
+ *
+ * @author Ma Junbao <mlive@live.cn> || @github.com/majunbao
+*/
+a,
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: visible !important;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td, caption {
+  vertical-align: top;
+}
+
+.icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: none;
+  border: 0;
+}
+
+::-ms-clear, ::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+body, input, textarea, keygen, select, button {
+  color: #333;
+  font-size: 14px;
+  font-family: "PingHei","Lucida Grande", "Lucida Sans Unicode", "Helvetica","Arial","Verdana","sans-serif";
+}
+
+*:active, *:focus {
+  outline: none;
+}
+
+.input, textarea, .button {
+  /*去除ios webkit默认样式*/
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+.clear:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  *zoom: 1;
+}
+
+.on-left {
+  float: left !important;
+}
+
+.on-right {
+  float: right !important;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.none {
+  display: none !important;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.vhidden {
+  visibility: hidden;
+}
 .cblue {
   color: #56bbff;
 }
@@ -1361,8 +1579,30 @@
 .checkbox input[type=checkbox]:disabled:checked + i::after {
   border-color: #aaa;
 }
-select.select {
+.select {
+  position: relative;
+  width: 40px;
+  height: 26px;
+  overflow: hidden;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #dddee1;
+}
+
+.select select {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  border: none;
+  height: 100%;
+  line-height: 100%;
+  width: 180% \9;
+}
+
+.select select::-ms-expand {
+  display: none;
 }
 .table {
   width: 100%;
