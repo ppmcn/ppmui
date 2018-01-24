@@ -60,7 +60,7 @@ renderer.table = function (header, body) {
 }
 let data = {
   nav: {
-    base: ['index', 'font', 'button'],
+    base: ['index', 'icon', 'font', 'button'],
     layout: ['margin', 'padding', 'column', 'border'],
     form: ['radio', 'checkbox', 'input', 'textarea', 'select'],
     data: ['table', 'page'],
