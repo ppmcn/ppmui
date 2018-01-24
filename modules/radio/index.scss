@@ -1,61 +1,55 @@
 @import "../../theme/index.scss";
 
-input.radio {
-  visibility: hidden;
+.radio {
   position: relative;
-  top: 0px;
-  margin:0 4px 0 0;
-  width: 14px;
-  height: 14px;
+}
+
+.radio input[type=radio] {
+  display: none;
 }
 
 // 边框样式
-input.radio::before {
-  content: ' ';
-  position: absolute;
+.radio i {
   vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  margin-right: 4px;
+  top: -2px;
   width: 12px;
   height: 12px;
   border-radius: 12px;
   border: 1px solid #CDCDCD;
-  visibility: visible;
 }
 
 // 选中后边框样式
-input.radio:checked::before {
+.radio input[type=radio]:checked + i {
   border: 1px solid $blue;
-}
-
-// 圆心状态
-input.radio::after {
-  content: ' ';
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  vertical-align: middle;
-  width: 8px;
-  height: 8px;
-  border-radius: 8px;
-  visibility: visible;
+  background-color: #Fff;
 }
 
 // 选中后圆心状态
-input.radio:checked::after {
+.radio input[type=radio]:checked + i::after {
+  content: '\00a0';
+  display: inline-block;
   background-color: $blue;
+  position:absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
 }
 
 
 // 禁用状态
-input.radio:disabled {
+.radio input[type=radio]:disabled+i, 
+.radio input[type=radio]:disabled:checked+i{
   cursor: not-allowed;
-}
-input.radio:disabled::before,
-input.radio:disabled:checked::before{
-  border: 1px solid #CDCDCD;
   background-color: #EEE;
+  border: 1px solid #CDCDCD;
+  
 }
-
-// 选中后禁用圆心状态
-input.radio:disabled:checked::after{
+.radio input[type=radio]:disabled+i::after, 
+.radio input[type=radio]:disabled:checked+i::after {
   background-color: #aaa;
 }

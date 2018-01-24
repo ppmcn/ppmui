@@ -1,20 +1,20 @@
 ## Checkbox
 
 ```html
-<label><input class="checkbox" checked type="checkbox" name="groupname" />单选项</label>
-<label><input class="checkbox" type="checkbox" name="groupname" />单选项</label>
+<label class="checkbox"><input checked type="checkbox" name="groupname" /><i></i>单选项</label>
+<label class="checkbox"><input type="checkbox" name="groupname" /><i></i>单选项</label>
 ```
 
 ## 禁用状态
 
 ```html
-<input class="checkbox" type="checkbox" disabled />
-<input class="checkbox" type="checkbox" checked disabled />
+<label class="checkbox"><input class="checkbox" type="checkbox" disabled /><i></i></label>
+<label class="checkbox"><input class="checkbox" type="checkbox" checked disabled /><i></i></label>
 ```
 ## 单选框组
 
 ```html
-<label><input class="checkbox" type="checkbox" checked name="groupname2" />单选项</label>
-<label><input class="checkbox" type="checkbox" name="groupname2" />单选项</label>
-<label><input class="checkbox" type="checkbox" name="groupname2" />单选项</label>
+<label class="checkbox"><input type="checkbox" checked name="groupname2" /><i></i>单选项</label>
+<label class="checkbox"><input type="checkbox" name="groupname2" /><i></i>单选项</label>
+<label class="checkbox"><input type="checkbox" name="groupname2" /><i></i>单选项</label>
 ```

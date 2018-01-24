@@ -91,11 +91,13 @@ __webpack_require__(9);
 
 __webpack_require__(10);
 
-__webpack_require__(25);
-
 __webpack_require__(11);
 
+__webpack_require__(27);
+
 __webpack_require__(12);
+
+__webpack_require__(13);
 
 /***/ }),
 /* 2 */
@@ -164,6 +166,12 @@ __webpack_require__(4);
 
 /***/ }),
 /* 12 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 13 */
 /***/ (function(module, exports) {
 
 function h(name, props) {
@@ -458,7 +466,6 @@ window.hyperapp = {
 };
 
 /***/ }),
-/* 13 */,
 /* 14 */,
 /* 15 */,
 /* 16 */,
@@ -470,7 +477,9 @@ window.hyperapp = {
 /* 22 */,
 /* 23 */,
 /* 24 */,
-/* 25 */
+/* 25 */,
+/* 26 */,
+/* 27 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

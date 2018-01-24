@@ -1,8 +1,4 @@
----
-title: select
-tags: select,uikit---
-
-# select
+## Select
 
 ``` html 
  
