@@ -190,7 +190,9 @@ __webpack_require__(6);
 __webpack_require__(15);
 
 $(function () {
-  $('.select').on('click', function () {});
+  $('body').on('change', '.select select', function () {
+    $(this).blur();
+  });
 });
 
 /***/ }),
