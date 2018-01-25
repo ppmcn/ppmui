@@ -99,9 +99,13 @@ __webpack_require__(13);
 
 __webpack_require__(14);
 
-__webpack_require__(16);
+__webpack_require__(15);
 
 __webpack_require__(17);
+
+__webpack_require__(18);
+
+__webpack_require__(19);
 
 /***/ }),
 /* 2 */
@@ -182,24 +186,24 @@ __webpack_require__(6);
 
 /***/ }),
 /* 14 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(15);
+__webpack_require__(16);
 
 $(function () {
   $('body').on('change', '.select select', function () {
     $(this).blur();
   });
 });
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 16 */
@@ -209,6 +213,12 @@ $(function () {
 
 /***/ }),
 /* 17 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 18 */
 /***/ (function(module, exports) {
 
 function h(name, props) {
@@ -501,6 +511,94 @@ window.hyperapp = {
   h: h,
   app: app
 };
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(20);
+
+$.fn.extend({
+  modal: function modal(config) {
+    var moc = '';
+    var bg = $('.mo');
+    var offsetTop = 220;
+
+    switch (config) {
+      case "open":
+        open(this);
+        break;
+
+      case "close":
+        close(this);
+        break;
+
+      default:
+        init();
+        break;
+    }
+
+    ;
+
+    function init(selector) {
+      if (bg.length <= 0) {
+        bg = $("<div>").addClass('mo none');
+        $('body').append(bg);
+      }
+
+      ;
+      $(selector).find('[modal-close]').off('click').on('click', function () {
+        close(selector);
+      });
+      bg.off('click').on('click', function () {
+        close(selector);
+      });
+    }
+
+    function close(selector) {
+      $(selector).addClass('none');
+
+      if ($('.mo-content').not('.none').length == 0) {
+        bg.addClass('none');
+      }
+    }
+
+    function open(selector) {
+      init(selector);
+      moc = $(selector);
+      moc.removeClass('none');
+      var cssTop = ($(window).height() - moc.outerHeight()) / 2; // top 算法
+
+      if (cssTop >= offsetTop) {
+        cssTop = offsetTop;
+      }
+
+      moc.css({
+        'top': 0,
+        'margin-left': -parseInt(moc.outerWidth() / 2)
+      });
+      moc.animate({
+        'top': cssTop
+      }, 200);
+      bg.removeClass('none');
+    }
+  }
+});
+$(function () {
+  $('body').on('click', "[modal]", function () {
+    var selector = $(this).attr('modal');
+    $(selector).modal('open');
+  });
+});
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
