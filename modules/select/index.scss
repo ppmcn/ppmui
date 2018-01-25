@@ -1,42 +1,101 @@
+@import "../../theme/index.scss";
+
 .select {
   position: relative;
-  width: 40px;
-  height: 26px;
-  overflow: hidden;
+  border: 1px solid $input-border-color;
   display: inline-block;
-  background-color: #fff;
-  border: 1px solid #dddee1;
+  min-width: 140px;
+  height: 30px;
+  line-height: 100%;
+  vertical-align: middle;
+  padding: 0 0px 0 8px;
+  border-radius: 3px;
+  overflow: hidden;
+  // background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
 }
+
 .select select {
+  display: inline-block;
+  height: 100%;
+  line-height: 100%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border: none;
-  background: transparent;
-  border: none;
-  height: 100%;
-  line-height: 100%;
-  width: 180% \9;
+  padding-right: 25px;
+  width: 100%;
+  width: 190% \9\0;
 }
-// .select::after {
-//   content: '\00a0';
-//   position: absolute;
-//   width: 0;
-//   height: 0;
-//   right: 0px;
-//   top: 50%;
-//   margin-top: -2px;
-//   border: 5px solid transparent;
-//   border-top-color: #808390;
-// }
-// .select::before {
-//   content: '\00a0';
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   width: 18px;
-//   height: 100%;
-//   background-color: #fff;
-// }
+
+.select select:focus:-moz-focusring {
+  outline: none;
+}
+
+
+.select select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
 
 .select select::-ms-expand { display: none; }
+
+.select::after {
+  content: '\00a0';
+   width:0;
+  height:0;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  margin-top: -3px;
+  border-width: 6px;
+  border-style:solid dashed dashed dashed;
+  border-color: $c777 transparent transparent transparent;
+}
+
+.select:hover {
+  border: 1px solid $blue;
+}
+
+// 大小
+.select.select-small {
+  min-width: 56px;
+  height: 26px;
+}
+.select.select-large {
+  min-width: 140px;
+  height: 36px;
+}
+
+// 颜色
+.select.select-green {
+  border-color: $green;
+}
+.select.select-green select {
+  color: $green;
+}
+.select.select-green::after {
+  border-top-color: $green;
+}
+
+
+.select.select-red {
+  border-color: $red;
+}
+.select.select-red select {
+  color: $red;
+}
+.select.select-red::after {
+  border-top-color: $red;
+}
+
+// 禁用状态
+.select-disabled {
+  background-color: #eee;
+}
+.select-disabled:hover {
+  // border-color: $input-border-color;
+}

@@ -1,6 +1,7 @@
 import './index.scss'
 
 $(function () {
-  $('.select').on('click', function () {
+  $('body').on('change', '.select select', function () {
+    $(this).blur()
   })
 })
