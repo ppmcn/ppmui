@@ -1,0 +1,83 @@
+/*
+* modal
+* .mo
+*/
+
+.mo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /*background-color: rgba(0, 0, 0, 0.8);*/
+}
+
+.mo-content {
+  position: fixed;
+  top: 0;
+  z-index: 150;
+  left: 50%;
+  margin-left: -50%;
+  max-width: 1000px;
+  min-width: 20px;
+  /*min-height: 90%;*/
+  max-height: 90%;
+  overflow: auto;
+}
+
+.mo-content .icon-large-close {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  margin: 12px;
+}
+
+.mo-content ul li strong {
+  display: inline-block;
+  vertical-align: top;
+  word-break: break-word;
+  max-width: 560px;
+}
+
+.mo-save-que,
+.mo-stat-que,
+.mo-judge-que,
+.mo-save-mark,
+.mo-stat-mark,
+.mo-ok-mark {
+  width: 500px;
+  text-align: center;
+}
+
+.mo-ok-yes {
+  overflow: hidden;
+  height: 49px;
+  border-top: 1px solid #d9e0e7;
+}
+
+.mo-ok-yes .button {
+  width: 50%;
+  padding: 0;
+  height: 49px;
+  line-height: 49px;
+  float: left;
+  border: 0;
+  font-size: 16px;
+}
+
+.mo-ok-yes .button:hover {
+  border-color: #d9e0e7;
+}
+
+.mo-ok-yes .mo-button-left {
+  margin-left: -2px;
+  border-right: 1px solid #d9e0e7;
+}
+
+.mo-ok-yes .mo-button-one {
+  width: 100%;
+}

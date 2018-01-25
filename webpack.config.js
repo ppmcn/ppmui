@@ -60,10 +60,7 @@ const commonConfig = {
       },
       {
         test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-        loader: 'url-loader',
-        options: {
-          limit: 10000
-        }
+        loader: 'url-loader?limit=8192&name=images/[hash:8].[name].[ext]'
       }
     ]
   },

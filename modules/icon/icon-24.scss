@@ -1,0 +1,55 @@
+.icon-24 {
+  width: 24px;
+  height: 24px;
+  background: url(./images/icon-24@2x.png) no-repeat;
+  background-size: (778px/2) (116px/2);
+}
+
+.icon-24 {
+  &.icon-video {
+    background-position: (-1px-48*0-14*0) -1px;
+  }
+
+  &.icon-piechat {
+    background-position: (-1px-48*1-14*1) -1px;
+  }
+
+  &.icon-paste {
+    background-position: (-1px-48*2-14*2) -1px;
+  }
+
+  &.icon-trend {
+    background-position: (-1px-48*3-14*3) -1px;
+  }
+
+  &.icon-chart {
+    background-position: (-1px-48*4-14*4+1) -1px;
+  }
+
+  &.icon-column {
+    background-position: (-1px-48*5-14*5+1) -1px;
+  }
+
+  &.icon-ranking {
+    background-position: (-1px-48*6-14*6+2) -1px;
+  }
+
+  &.icon-book {
+    background-position: (-1px-48*7-14*7+3) -1px;
+  }
+  &.icon-notebook {
+    background-position: (-1px-48*8-14*8+3) -1px;
+  }
+  &.icon-pencli {
+    background-position: (-1px-48*9-14*9+4) -1px;
+  }
+  &.icon-bell {
+    background-position: (-1px-48*9-14*9+4) -1px;
+  }
+  &.icon-monitor {
+    background-position: (-1px-48*9-14*9+4) -1px;
+  }
+  &.icon-plus {
+    background-position: (-1px-48*9-14*9+4) -1px;
+  }
+}

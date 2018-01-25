@@ -1,19 +1,21 @@
+import './indes.scss';
+
 $.fn.extend({
-  modal: function(config) {
+  modal: function (config) {
     var moc = '';
     var bg = $('.mo');
     var offsetTop = 220;
 
     switch (config) {
       case "open":
-      open(this);
-      break;
+        open(this);
+        break;
       case "close":
-      close(this);
-      break;
+        close(this);
+        break;
       default:
-      init();
-      break;
+        init();
+        break;
     };
 
     function init(selector) {
@@ -21,10 +23,10 @@ $.fn.extend({
         bg = $("<div>").addClass('mo none');
         $('body').append(bg);
       };
-      $(selector).find('[modal-close]').off('click').on('click', function(){
+      $(selector).find('[modal-close]').off('click').on('click', function () {
         close(selector);
       });
-      bg.off('click').on('click', function(){
+      bg.off('click').on('click', function () {
         close(selector);
       })
 
@@ -32,7 +34,7 @@ $.fn.extend({
 
     function close(selector) {
       $(selector).addClass('none');
-      if($('.mo-content').not('.none').length == 0){
+      if ($('.mo-content').not('.none').length == 0) {
         bg.addClass('none');
       }
     }
@@ -55,4 +57,11 @@ $.fn.extend({
       bg.removeClass('none')
     }
   }
+})
+
+$(function () {
+  $('body').on('click', "[modal]", function () {
+    var selector = $(this).attr('modal');
+    $(selector).modal('open');
+  });
 })
