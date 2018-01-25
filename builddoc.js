@@ -64,7 +64,7 @@ let data = {
     layout: ['margin', 'padding', 'column', 'border'],
     form: ['radio', 'checkbox', 'input', 'textarea', 'select'],
     data: ['table', 'page'],
-    notice: ['alert', 'confirm', 'message', 'dialog'],
+    notice: ['alert', 'confirm', 'message', 'modal'],
     plugins: ['birthday', 'hyperapp']
   }
 };

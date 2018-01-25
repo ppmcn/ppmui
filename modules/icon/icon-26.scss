@@ -1,0 +1,33 @@
+.icon-26 {
+  width: 26px;
+  height: 26px;
+  background: url(./images/icon-26@2x.png) no-repeat;
+  background-size: (292px/2) (116px/2);
+}
+
+.icon-26 {
+  &.icon-down {
+    background-position: (-1px-26*0-6*0) -31px;
+    &:hover {
+      background-position: (-1px-26*0-6*0) -1px;
+    }
+  }
+
+  &.icon-up {
+    background-position: (-1px-26*1-6*1) -31px;
+    &:hover {
+      background-position: (-1px-26*1-6*1) -1px;
+    }
+  }
+
+  &.icon-del {
+    background-position: (-1px-26*2-6*2) -31px;
+    &:hover {
+      background-position: (-1px-26*2-6*2) -1px;
+    }
+  }
+
+  &.icon-right {
+    background-position: (-1px-26*4-6*3+4) -1px;
+  }
+}

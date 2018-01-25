@@ -1,0 +1,13 @@
+.icon-28 {
+  width: 28px;
+  height: 28px;
+  background: url(./images/icon-28@2x.png) no-repeat;
+  background-size: (394px/2) (60px/2);
+}
+
+.icon-28 {
+  &.icon-all {background-position: (-1px-28*0-32*0) -1px;}
+  &.icon-layer {background-position: (-1px-28*1-32*1) -1px;}
+  &.icon-stars {background-position: (-1px-28*2-32*2-2) -1px;}
+  &.icon-pen {background-position: (-1px-28*3-32*3+13) -1px;}
+}
