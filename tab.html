@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="ppmui/ppmui-1.0.5.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="ppmui/ppmui-1.0.5.js"></script>
+</head>
+
+<body class="ppmui-site">
+  <div class="common-header">
+  <div class="page-center">
+    <h1 class="doc-logo">
+      <a href="index.html">UIKit</a>
+    </h1>
+  </div>
+</div>
+
+  <div class="common-content">
+    <div class="page-center relative">
+      <div class="common-nav">
+  <ul class="u-menu">
+    
+    <li>
+      <strong>base</strong>
+      <ul>
+        
+        <li>
+          <a href="index.html" >index</a>
+        </li>
+        
+        <li>
+          <a href="icon.html" >icon</a>
+        </li>
+        
+        <li>
+          <a href="button.html" >button</a>
+        </li>
+        
+        <li>
+          <a href="font.html" >font</a>
+        </li>
+        
+        <li>
+          <a href="background.html" >background</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>layout</strong>
+      <ul>
+        
+        <li>
+          <a href="margin.html" >margin</a>
+        </li>
+        
+        <li>
+          <a href="padding.html" >padding</a>
+        </li>
+        
+        <li>
+          <a href="column.html" >column</a>
+        </li>
+        
+        <li>
+          <a href="border.html" >border</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>form</strong>
+      <ul>
+        
+        <li>
+          <a href="radio.html" >radio</a>
+        </li>
+        
+        <li>
+          <a href="checkbox.html" >checkbox</a>
+        </li>
+        
+        <li>
+          <a href="input.html" >input</a>
+        </li>
+        
+        <li>
+          <a href="textarea.html" >textarea</a>
+        </li>
+        
+        <li>
+          <a href="select.html" >select</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>data</strong>
+      <ul>
+        
+        <li>
+          <a href="table.html" >table</a>
+        </li>
+        
+        <li>
+          <a href="page.html" >page</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>notice</strong>
+      <ul>
+        
+        <li>
+          <a href="message.html" >message</a>
+        </li>
+        
+        <li>
+          <a href="modal.html" >modal</a>
+        </li>
+        
+        <li>
+          <a href="loading.html" >loading</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>plugins</strong>
+      <ul>
+        
+        <li>
+          <a href="birthday.html" >birthday</a>
+        </li>
+        
+        <li>
+          <a href="hyperapp.html" >hyperapp</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+</div> <div class="common-main" id="docs">
+  <h2>多个tab标签</h2>
+<div class="docs-html"><div class="tab">
+ <ul class="tab-header">
+  <li><a>公司1</a></li>
+  <li class="now"><a>公司2</a></li>
+  <li><a>非常长的标签名称</a></li>
+ </ul>
+ <div class=“tab-content now">
+   你好1
+   <br>
+   <br>
+</div>
+<div class="tab-content">
+你好2
+  <br>
+  <br>       
+ </div>
+</div></div>
+<pre class="docs-code language-html"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-header"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>公司1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"now"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>公司2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>非常长的标签名称<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">“tab-content</span> <span class="hljs-attr">now</span>"&gt;</span>
+   你好1
+   <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-content"</span>&gt;</span>
+你好2
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>       
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+<h2>单个tab标签</h2>
+<div class="docs-html"><div class="tab">
+ <ul class="tab-header">
+   <li><a>公司1</a></li>
+ </ul>
+<div class="now tab-content">
+   你好1
+   <br>
+   <br>
+ </div>
+</div></div>
+<pre class="docs-code language-html"><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"tab"</span>&gt;
+ <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-header"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>公司1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>
+&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"now tab-content"</span>&gt;
+   你好<span class="hljs-number">1</span>
+   &lt;br&gt;
+   <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+
+
+</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
