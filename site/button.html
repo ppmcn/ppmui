@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="ppmui/ppmui-1.0.5.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="ppmui/ppmui-1.0.5.js"></script>
+</head>
+
+<body class="ppmui-site">
+  <div class="common-header">
+  <div class="page-center">
+    <h1 class="doc-logo">
+      <a href="index.html">UIKit</a>
+    </h1>
+  </div>
+</div>
+
+  <div class="common-content">
+    <div class="page-center relative">
+      <div class="common-nav">
+  <ul class="u-menu">
+    
+    <li>
+      <strong>base</strong>
+      <ul>
+        
+        <li>
+          <a href="index.html" >index</a>
+        </li>
+        
+        <li>
+          <a href="icon.html" >icon</a>
+        </li>
+        
+        <li>
+          <a href="button.html" class="now" >button</a>
+        </li>
+        
+        <li>
+          <a href="font.html" >font</a>
+        </li>
+        
+        <li>
+          <a href="background.html" >background</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>layout</strong>
+      <ul>
+        
+        <li>
+          <a href="margin.html" >margin</a>
+        </li>
+        
+        <li>
+          <a href="padding.html" >padding</a>
+        </li>
+        
+        <li>
+          <a href="column.html" >column</a>
+        </li>
+        
+        <li>
+          <a href="border.html" >border</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>form</strong>
+      <ul>
+        
+        <li>
+          <a href="radio.html" >radio</a>
+        </li>
+        
+        <li>
+          <a href="checkbox.html" >checkbox</a>
+        </li>
+        
+        <li>
+          <a href="input.html" >input</a>
+        </li>
+        
+        <li>
+          <a href="textarea.html" >textarea</a>
+        </li>
+        
+        <li>
+          <a href="select.html" >select</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>data</strong>
+      <ul>
+        
+        <li>
+          <a href="table.html" >table</a>
+        </li>
+        
+        <li>
+          <a href="page.html" >page</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>notice</strong>
+      <ul>
+        
+        <li>
+          <a href="message.html" >message</a>
+        </li>
+        
+        <li>
+          <a href="modal.html" >modal</a>
+        </li>
+        
+        <li>
+          <a href="loading.html" >loading</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>plugins</strong>
+      <ul>
+        
+        <li>
+          <a href="birthday.html" >birthday</a>
+        </li>
+        
+        <li>
+          <a href="hyperapp.html" >hyperapp</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+</div> <div class="common-main" id="docs">
+  <h2>Button Color</h2>
+<div class="docs-html"><div style="background:#eee;padding:20px">
+  <a class="button button-blue">blue</a>
+  <a class="button button-green">green</a>
+  <a class="button button-orange">orange</a>
+  <a class="button button-red">orange</a>
+  <a class="button button-white">white</a>
+  <a class="button button-disabled">禁用</a>
+</div></div>
+<pre class="docs-code language-html"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background:#eee;padding:20px"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-blue"</span>&gt;</span>blue<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-green"</span>&gt;</span>green<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-orange"</span>&gt;</span>orange<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-red"</span>&gt;</span>orange<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-white"</span>&gt;</span>white<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-disabled"</span>&gt;</span>禁用<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+<h2>Button Size</h2>
+<div class="docs-html"><a class="button button-blue button-smaller">超小</a>
+<a class="button button-blue button-small">小按钮</a>
+<a class="button button-blue">正常大小</a>
+<a class="button button-blue button-large">大按钮</a>
+<a class="button button-blue button-larger">很大的按钮</a></div>
+<pre class="docs-code language-html"><code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-blue button-smaller"</span>&gt;</span>超小<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-blue button-small"</span>&gt;</span>小按钮<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-blue"</span>&gt;</span>正常大小<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-blue button-large"</span>&gt;</span>大按钮<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-blue button-larger"</span>&gt;</span>很大的按钮<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+
+<h2>Button Style</h2>
+<div class="docs-html"><div style="background:#eee;padding:20px">
+  <a class="button button-blue button-border">边框按钮</a>
+  <a class="button button-green button-border">边框按钮</a>
+  <a class="button button-white button-border">边框按钮</a>
+  <a class="button button-red button-radius">圆角按钮</a>
+</div></div>
+<pre class="docs-code language-html"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background:#eee;padding:20px"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-blue button-border"</span>&gt;</span>边框按钮<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-green button-border"</span>&gt;</span>边框按钮<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-white button-border"</span>&gt;</span>边框按钮<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-red button-radius"</span>&gt;</span>圆角按钮<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+
+</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
