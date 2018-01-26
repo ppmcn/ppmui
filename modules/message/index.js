@@ -1,11 +1,11 @@
 import './index.scss';
 
-(typeof ppmcn == 'undefined') && (window.ppmcn = {});
+(typeof ppmui == 'undefined') && (window.ppmui = {});
 
 var clearTime = ''
 
 function msg(msg) {
-  var boxClass = 'ppmcn-msg';
+  var boxClass = 'ppmui-msg';
   _clear()
 
   $('body').after('<div class="' + boxClass + '">' + msg + '</div>');
@@ -16,10 +16,10 @@ function msg(msg) {
 }
 
 function info(msg) {
-  var boxClass = 'ppmcn-info';
+  var boxClass = 'ppmui-info';
   _clear()
 
-  $('body').after('<div class="' + boxClass + '"><i class="ppmcn-message-status"></i>' + msg + '</div>');
+  $('body').after('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
 
   clearTime = setTimeout(function () {
     _clear()
@@ -27,10 +27,10 @@ function info(msg) {
 }
 
 function error(msg) {
-  var boxClass = 'ppmcn-error';
+  var boxClass = 'ppmui-error';
   _clear()
 
-  $('body').after('<div class="' + boxClass + '"><i class="ppmcn-message-status"></i>' + msg + '</div>');
+  $('body').after('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
 
   clearTime = setTimeout(function () {
     _clear()
@@ -39,9 +39,9 @@ function error(msg) {
 
 function _clear() {
   clearTimeout(clearTime)
-  $('.ppmcn-msg, .ppmcn-info, .ppmcn-error').remove()
+  $('.ppmui-msg, .ppmui-info, .ppmui-error').remove()
 }
 
-ppmcn.msg = msg;
-ppmcn.info = info;
-ppmcn.error = error;
+ppmui.msg = msg;
+ppmui.info = info;
+ppmui.error = error;

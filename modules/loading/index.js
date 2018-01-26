@@ -1,6 +1,6 @@
 import './index.scss';
 
-(typeof ppmcn == 'undefined') && (window.ppmcn = {});
+(typeof ppmui == 'undefined') && (window.ppmui = {});
 
 var clearTime = '';
 
@@ -18,10 +18,10 @@ function loading(operate) {
 
 function open(msg) {
   msg = msg || '正在加载中';
-  var boxClass = 'ppmcn-loading';
+  var boxClass = 'ppmui-loading';
   _clear()
 
-  $('body').after('<div class="' + boxClass + '"><i class="ppmcn-message-status"></i>' + msg + '</div>');
+  $('body').after('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
 
   // clearTime = setTimeout(function () {
   //   _clear()
@@ -34,7 +34,7 @@ function close() {
 
 function _clear() {
   // clearTimeout(clearTime)
-  $('.ppmcn-loading').remove()
+  $('.ppmui-loading').remove()
 }
 
-ppmcn.loading = loading;
+ppmui.loading = loading;
