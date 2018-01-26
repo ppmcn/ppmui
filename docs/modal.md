@@ -48,3 +48,9 @@
   }
 </style>
 ```
+
+## API
+```html
+<a class="button button-blue" onclick=javascript:$('[modal="demo2"]').modal('open');>JS打开弹窗</a>
+<a class="button button-blue" onclick=javascript:$('[modal="demo2"]').modal('close');>JS关闭弹窗</a>
+```

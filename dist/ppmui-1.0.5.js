@@ -85,8 +85,6 @@ __webpack_require__(4);
 
 __webpack_require__(7);
 
-__webpack_require__(46);
-
 __webpack_require__(8);
 
 __webpack_require__(9);
@@ -105,11 +103,13 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-__webpack_require__(18);
+__webpack_require__(17);
 
 __webpack_require__(19);
 
 __webpack_require__(20);
+
+__webpack_require__(21);
 
 /***/ }),
 /* 2 */
@@ -202,24 +202,24 @@ __webpack_require__(6);
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(17);
+__webpack_require__(18);
 
 $(function () {
   $('body').on('change', '.select select', function () {
     $(this).blur();
   });
 });
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 18 */
@@ -229,6 +229,12 @@ $(function () {
 
 /***/ }),
 /* 19 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports) {
 
 function h(name, props) {
@@ -523,13 +529,13 @@ window.hyperapp = {
 };
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(21);
+__webpack_require__(22);
 
 $.fn.extend({
   modal: function modal(config) {
@@ -599,37 +605,7 @@ $(function () {
 });
 
 /***/ }),
-/* 21 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */
+/* 22 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
