@@ -79,6 +79,8 @@ module.exports = __webpack_require__(1);
 
 __webpack_require__(2);
 
+__webpack_require__(51);
+
 __webpack_require__(3);
 
 __webpack_require__(4);
@@ -110,6 +112,10 @@ __webpack_require__(19);
 __webpack_require__(20);
 
 __webpack_require__(21);
+
+__webpack_require__(48);
+
+__webpack_require__(54);
 
 /***/ }),
 /* 2 */
@@ -606,6 +612,152 @@ $(function () {
 
 /***/ }),
 /* 22 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(49);
+
+typeof ppmcn == 'undefined' && (window.ppmcn = {});
+var clearTime = '';
+
+function msg(msg) {
+  var boxClass = 'ppmcn-msg';
+
+  _clear();
+
+  $('body').after('<div class="' + boxClass + '">' + msg + '</div>');
+  clearTime = setTimeout(function () {
+    _clear();
+  }, 2300);
+}
+
+function info(msg) {
+  var boxClass = 'ppmcn-info';
+
+  _clear();
+
+  $('body').after('<div class="' + boxClass + '"><i class="ppmcn-message-status"></i>' + msg + '</div>');
+  clearTime = setTimeout(function () {
+    _clear();
+  }, 2300);
+}
+
+function error(msg) {
+  var boxClass = 'ppmcn-error';
+
+  _clear();
+
+  $('body').after('<div class="' + boxClass + '"><i class="ppmcn-message-status"></i>' + msg + '</div>');
+  clearTime = setTimeout(function () {
+    _clear();
+  }, 2300);
+}
+
+function _clear() {
+  clearTimeout(clearTime);
+  $('.ppmcn-msg, .ppmcn-info, .ppmcn-error').remove();
+}
+
+ppmcn.msg = msg;
+ppmcn.info = info;
+ppmcn.error = error;
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 50 */,
+/* 51 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 52 */,
+/* 53 */,
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(55);
+
+typeof ppmcn == 'undefined' && (window.ppmcn = {});
+var clearTime = '';
+
+function loading(operate) {
+  switch (operate) {
+    case 'close':
+      close();
+      break;
+
+    default:
+      open(operate);
+      break;
+  }
+}
+
+function open(msg) {
+  msg = msg || '正在加载中';
+  var boxClass = 'ppmcn-loading';
+
+  _clear();
+
+  $('body').after('<div class="' + boxClass + '"><i class="ppmcn-message-status"></i>' + msg + '</div>'); // clearTime = setTimeout(function () {
+  //   _clear()
+  // }, 2300)
+}
+
+function close() {
+  _clear();
+}
+
+function _clear() {
+  // clearTimeout(clearTime)
+  $('.ppmcn-loading').remove();
+}
+
+ppmcn.loading = loading;
+
+/***/ }),
+/* 55 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

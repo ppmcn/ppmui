@@ -1,4 +1,5 @@
 import '../modules/reset'
+import '../modules/link'
 import '../modules/tool'
 import '../modules/font'
 import '../modules/icon'
@@ -15,3 +16,8 @@ import '../modules/select'
 import '../modules/table'
 import '../modules/hyperapp'
 import '../modules/modal'
+
+
+// JAVASCRIPT
+import '../modules/message'
+import '../modules/loading'

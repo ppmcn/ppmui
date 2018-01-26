@@ -68,7 +68,7 @@
         </li>
         
         <li>
-          <a href="border.html" class="now" >border</a>
+          <a href="border.html" >border</a>
         </li>
         
       </ul>
@@ -121,7 +121,7 @@
       <ul>
         
         <li>
-          <a href="message.html" >message</a>
+          <a href="message.html" class="now" >message</a>
         </li>
         
         <li>
@@ -152,9 +152,17 @@
     
   </ul>
 </div> <div class="common-main" id="docs">
-  <h2>Border</h2>
-<div class="docs-html"><div class="border-bottom-none border-top-none">border</div></div>
-<pre class="docs-code language-html"><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"border-bottom-none border-top-none"</span>&gt;border&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+  <h2>Message</h2>
+<div class="docs-html"><a href=javascript:ppmcn.msg('请输入名称后查询！');>点击我</a>
+
+<a href=javascript:ppmcn.info('发布成功！');>点击我</a>
+
+<a href=javascript:ppmcn.error('发布失败！');>点击我</a></div>
+<pre class="docs-code language-html"><code>&lt;a href=javascript:ppmcn.msg(<span class="hljs-comment">'请输入名称后查询！');&gt;点击我<span class="hljs-doctag">&lt;/a&gt;</span></span>
+
+&lt;a href=javascript:ppmcn.info(<span class="hljs-comment">'发布成功！');&gt;点击我<span class="hljs-doctag">&lt;/a&gt;</span></span>
+
+&lt;a href=javascript:ppmcn.<span class="hljs-keyword">error</span>(<span class="hljs-comment">'发布失败！');&gt;点击我<span class="hljs-doctag">&lt;/a&gt;</span></span></code></pre>
 
 
 </div>

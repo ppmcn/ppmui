@@ -37,7 +37,7 @@
     </div>
   </div>
   <div class="modal-footer">
-    <a class="margin-right-15" modal-close>取消</a>
+    <a class="margin-right-15 c555" modal-close>取消</a>
     <a class="button button-blue margin-right-20" modal-close>确定</a>
   </div>
 </div>

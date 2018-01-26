@@ -68,7 +68,7 @@
         </li>
         
         <li>
-          <a href="border.html" class="now" >border</a>
+          <a href="border.html" >border</a>
         </li>
         
       </ul>
@@ -129,7 +129,7 @@
         </li>
         
         <li>
-          <a href="loading.html" >loading</a>
+          <a href="loading.html" class="now" >loading</a>
         </li>
         
       </ul>
@@ -152,9 +152,17 @@
     
   </ul>
 </div> <div class="common-main" id="docs">
-  <h2>Border</h2>
-<div class="docs-html"><div class="border-bottom-none border-top-none">border</div></div>
-<pre class="docs-code language-html"><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"border-bottom-none border-top-none"</span>&gt;border&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+  <h2>Loading</h2>
+<div class="docs-html"><a href=javascript:ppmcn.loading();>显示loading</a>
+<span class="padding-right-30"></span>
+<a href=javascript:ppmcn.loading('正在加载中(⊙o⊙)哦');>自定义文字</a>
+<span class="padding-right-30"></span>
+<a href=javascript:ppmcn.loading('close');>关闭loading</a></div>
+<pre class="docs-code language-html"><code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">javascript:ppmcn.loading();</span>&gt;</span>显示loading<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"padding-right-30"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">javascript:ppmcn.loading(</span>'正在加载中(⊙<span class="hljs-attr">o</span>⊙)哦');&gt;</span>自定义文字<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"padding-right-30"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">javascript:ppmcn.loading(</span>'<span class="hljs-attr">close</span>');&gt;</span>关闭loading<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 
 
 </div>

@@ -1,0 +1,53 @@
+// ppmcn
+.ppmcn-msg,
+.ppmcn-info,
+.ppmcn-error {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  position: fixed;
+  z-index: 56;
+  word-wrap:break-word;
+}
+
+.ppmcn-msg {
+  padding: 10px 20px;
+  line-height: 22px;
+  background:rgba(0,0,0,0.8);
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  min-width: 100px;
+  max-width: 360px;
+}
+
+.ppmcn-info,
+.ppmcn-error {
+  background-color: #fff;
+  box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.1);
+  padding: 30px 30px;
+  min-width: 220px;
+  max-width: 400px;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+
+.ppmcn-info .ppmcn-message-status,
+.ppmcn-error .ppmcn-message-status {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+  background: url('./images/state@2x.png') no-repeat;
+  background-size: (206px/2) (56px/2);
+  background-position: -2px -2px;
+  vertical-align: middle;
+}
+
+.ppmcn-error .ppmcn-message-status {
+  background-position: -77px -2px;
+}
