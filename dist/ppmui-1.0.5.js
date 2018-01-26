@@ -85,6 +85,8 @@ __webpack_require__(4);
 
 __webpack_require__(7);
 
+__webpack_require__(46);
+
 __webpack_require__(8);
 
 __webpack_require__(9);
@@ -101,11 +103,13 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-__webpack_require__(17);
+__webpack_require__(16);
 
 __webpack_require__(18);
 
 __webpack_require__(19);
+
+__webpack_require__(20);
 
 /***/ }),
 /* 2 */
@@ -192,24 +196,24 @@ __webpack_require__(6);
 
 /***/ }),
 /* 15 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(16);
+__webpack_require__(17);
 
 $(function () {
   $('body').on('change', '.select select', function () {
     $(this).blur();
   });
 });
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 17 */
@@ -219,6 +223,12 @@ $(function () {
 
 /***/ }),
 /* 18 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 19 */
 /***/ (function(module, exports) {
 
 function h(name, props) {
@@ -513,18 +523,18 @@ window.hyperapp = {
 };
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(20);
+__webpack_require__(21);
 
 $.fn.extend({
   modal: function modal(config) {
     var moc = '';
-    var bg = $('.mo');
+    var bg = $('[modal-bg]');
     var offsetTop = 220;
 
     switch (config) {
@@ -545,7 +555,7 @@ $.fn.extend({
 
     function init(selector) {
       if (bg.length <= 0) {
-        bg = $("<div>").addClass('mo none');
+        bg = $("<div>").attr('modal-bg', '');
         $('body').append(bg);
       }
 
@@ -559,43 +569,67 @@ $.fn.extend({
     }
 
     function close(selector) {
-      $(selector).addClass('none');
-
-      if ($('.mo-content').not('.none').length == 0) {
-        bg.addClass('none');
-      }
+      $(selector).attr('hidden', '');
+      bg.attr('hidden', '');
     }
 
     function open(selector) {
       init(selector);
       moc = $(selector);
-      moc.removeClass('none');
-      var cssTop = ($(window).height() - moc.outerHeight()) / 2; // top 算法
+      moc.removeAttr('hidden'); // var cssTop = (($(window).height() - moc.outerHeight()) / 2); // top 算法
+      // if (cssTop >= offsetTop) {
+      //   cssTop = offsetTop
+      // }
+      // moc.css({
+      //   'top': 0
+      // })
+      // moc.animate({
+      //   'top': cssTop
+      // }, 200);
 
-      if (cssTop >= offsetTop) {
-        cssTop = offsetTop;
-      }
-
-      moc.css({
-        'top': 0,
-        'margin-left': -parseInt(moc.outerWidth() / 2)
-      });
-      moc.animate({
-        'top': cssTop
-      }, 200);
-      bg.removeClass('none');
+      bg.removeAttr('hidden');
     }
   }
 });
 $(function () {
-  $('body').on('click', "[modal]", function () {
-    var selector = $(this).attr('modal');
-    $(selector).modal('open');
+  $('body').on('click', "[modal-href]", function () {
+    var selector = $(this).attr('modal-href');
+    $('[modal=' + selector + ']').modal('open');
   });
 });
 
 /***/ }),
-/* 20 */
+/* 21 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -41,15 +41,36 @@ const commonConfig = {
       {
         test: /\.scss$/,
         use: extractSass.extract({
-          use: [{
-            loader: "css-loader"
-          }, {
-            loader: "sass-loader",
-            options: {
-              outputStyle: 'expanded',
-              includePaths: ['theme/index.scss']
+          use: [
+            {
+              loader: "css-loader"
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                ident: 'postcss',
+                plugins: (loader) => [
+                  require('autoprefixer')({
+                    browsers: [
+                      "defaults",
+                      "not ie < 8",
+                      "last 2 versions",
+                      "> 1%",
+                      "iOS 7",
+                      "last 3 iOS versions"
+                    ]
+                  }),
+                ]
+              }
+            },
+            {
+              loader: "sass-loader",
+              options: {
+                outputStyle: 'expanded',
+                includePaths: ['theme/index.scss']
+              }
             }
-          }],
+          ],
           // use style-loader in development
           fallback: "style-loader"
         })
@@ -85,5 +106,11 @@ const siteConfig = Object.assign({}, commonConfig, {
     filename: `${name}.js`
   }
 })
+const zuoyeben = Object.assign({}, commonConfig, {
+  output: {
+    path: path.resolve(__dirname, '/Users/jun/Documents/work/06凤凰传媒/07作业本/作业本二期/plugins/ppmui'),
+    filename: `${name}.js`
+  }
+})
 
-module.exports = [distConfig, siteConfig];
+module.exports = [distConfig, siteConfig, zuoyeben];

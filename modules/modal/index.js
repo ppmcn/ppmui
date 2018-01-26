@@ -3,7 +3,7 @@ import './indes.scss';
 $.fn.extend({
   modal: function (config) {
     var moc = '';
-    var bg = $('.mo');
+    var bg = $('[modal-bg]');
     var offsetTop = 220;
 
     switch (config) {
@@ -20,7 +20,7 @@ $.fn.extend({
 
     function init(selector) {
       if (bg.length <= 0) {
-        bg = $("<div>").addClass('mo none');
+        bg = $("<div>").attr('modal-bg', '');
         $('body').append(bg);
       };
       $(selector).find('[modal-close]').off('click').on('click', function () {
@@ -33,35 +33,32 @@ $.fn.extend({
     }
 
     function close(selector) {
-      $(selector).addClass('none');
-      if ($('.mo-content').not('.none').length == 0) {
-        bg.addClass('none');
-      }
+      $(selector).attr('hidden', '');
+      bg.attr('hidden', '');
     }
 
     function open(selector) {
       init(selector);
       moc = $(selector);
-      moc.removeClass('none');
-      var cssTop = (($(window).height() - moc.outerHeight()) / 2); // top 算法
-      if (cssTop >= offsetTop) {
-        cssTop = offsetTop
-      }
-      moc.css({
-        'top': 0,
-        'margin-left': -parseInt(moc.outerWidth() / 2)
-      })
-      moc.animate({
-        'top': cssTop
-      }, 200);
-      bg.removeClass('none')
+      moc.removeAttr('hidden');
+      // var cssTop = (($(window).height() - moc.outerHeight()) / 2); // top 算法
+      // if (cssTop >= offsetTop) {
+      //   cssTop = offsetTop
+      // }
+      // moc.css({
+      //   'top': 0
+      // })
+      // moc.animate({
+      //   'top': cssTop
+      // }, 200);
+      bg.removeAttr('hidden')
     }
   }
 })
 
 $(function () {
-  $('body').on('click', "[modal]", function () {
-    var selector = $(this).attr('modal');
-    $(selector).modal('open');
+  $('body').on('click', "[modal-href]", function () {
+    var selector = $(this).attr('modal-href');
+    $('[modal=' + selector + ']').modal('open');
   });
 })
