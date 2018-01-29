@@ -111,7 +111,6 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-y: visible !important;
 }
 
 a {
@@ -2074,6 +2073,7 @@ a.text-dark:hover {
   right: 14px;
   top: 12px;
   display: block;
+  z-index: 1;
 }
 
 [modal] .modal-close:hover {
