@@ -1,6 +1,6 @@
 ## input color
 
-``` html  
+``` html
 <input class="input" type="text" placeholder="主题色">
 <input type="text" class="input input-blue" value="blue" placeholder="blue">
 <div class="padding-bottom-10"></div>
@@ -17,7 +17,7 @@
 
 ## Input Size
 
-``` html  
+``` html
 <div>
   <input type="text" class="input input-smaller" placeholder="用户">
   <div class="padding-bottom-10"></div>
