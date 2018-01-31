@@ -101,21 +101,25 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
+__webpack_require__(59);
+
 __webpack_require__(16);
 
 __webpack_require__(17);
 
 __webpack_require__(18);
 
-__webpack_require__(20);
+__webpack_require__(19);
 
 __webpack_require__(21);
 
 __webpack_require__(22);
 
-__webpack_require__(24);
+__webpack_require__(23);
 
-__webpack_require__(26);
+__webpack_require__(25);
+
+__webpack_require__(27);
 
 /***/ }),
 /* 2 */
@@ -220,24 +224,24 @@ __webpack_require__(7);
 
 /***/ }),
 /* 18 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(19);
+__webpack_require__(20);
 
 $(function () {
   $('body').on('change', '.select select', function () {
     $(this).blur();
   });
 });
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 20 */
@@ -247,6 +251,12 @@ $(function () {
 
 /***/ }),
 /* 21 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 22 */
 /***/ (function(module, exports) {
 
 function h(name, props) {
@@ -541,13 +551,13 @@ window.hyperapp = {
 };
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(23);
+__webpack_require__(24);
 
 $.fn.extend({
   modal: function modal(config) {
@@ -617,19 +627,19 @@ $(function () {
 });
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(25);
+__webpack_require__(26);
 
 typeof ppmui == 'undefined' && (window.ppmui = {});
 var clearTime = '';
@@ -667,29 +677,41 @@ function error(msg) {
   }, 2300);
 }
 
+function success(msg) {
+  var boxClass = 'ppmui-success';
+
+  _clear();
+
+  $('body').after('<div class="' + boxClass + '"><i class="ppmui-success-icon"></i><p>' + msg + '</p></div>');
+  clearTime = setTimeout(function () {
+    _clear();
+  }, 2300);
+}
+
 function _clear() {
   clearTimeout(clearTime);
-  $('.ppmui-msg, .ppmui-info, .ppmui-error').remove();
+  $('.ppmui-msg, .ppmui-info, .ppmui-error, .ppmui-success').remove();
 }
 
 ppmui.msg = msg;
 ppmui.info = info;
 ppmui.error = error;
+ppmui.success = success;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(27);
+__webpack_require__(28);
 
 typeof ppmui == 'undefined' && (window.ppmui = {});
 var clearTime = '';
@@ -729,7 +751,43 @@ function _clear() {
 ppmui.loading = loading;
 
 /***/ }),
-/* 27 */
+/* 28 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
