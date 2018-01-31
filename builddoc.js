@@ -62,7 +62,7 @@ let data = {
   nav: {
     base: ['index', 'icon', 'button', 'font', 'background'],
     layout: ['margin', 'padding', 'column', 'border'],
-    form: ['radio', 'checkbox', 'input', 'textarea', 'select'],
+    form: ['radio', 'checkbox', 'input', 'textarea', 'select', 'form'],
     data: ['table', 'page'],
     notice: ['message', 'modal', 'loading'],
     plugins: ['birthday', 'hyperapp']

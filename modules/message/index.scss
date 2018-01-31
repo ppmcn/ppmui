@@ -1,7 +1,8 @@
 // ppmui
 .ppmui-msg,
 .ppmui-info,
-.ppmui-error {
+.ppmui-error,
+.ppmui-success {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -23,7 +24,8 @@
 }
 
 .ppmui-info,
-.ppmui-error {
+.ppmui-error,
+.ppmui-success {
   background-color: #fff;
   box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.1);
   padding: 30px 30px;
@@ -50,4 +52,15 @@
 
 .ppmui-error .ppmui-message-status {
   background-position: -77px -2px;
+}
+
+.ppmui-success .ppmui-success-icon{
+  display: block;
+  width: 86px;
+  height: 91px;
+  margin: 0 auto;
+  background: url(images/success.png) no-repeat center center;
+}
+.ppmui-success p{
+  padding-top: 4px;
 }

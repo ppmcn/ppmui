@@ -13,6 +13,8 @@
   color: $input-color;
   border-radius: $input-radius;
 }
+input::-ms-clear{display:none;}
+input::-ms-reveal{display:none;}
 
 #{$input-namespace}:hover {
   border-color: lighten($blue, 10%)

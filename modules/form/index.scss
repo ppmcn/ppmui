@@ -1,0 +1,22 @@
+.form fieldset {
+  border: none;
+}
+.form fieldset .form-label {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+  color: #555;
+  padding-right: 20px;
+}
+.form fieldset .form-label.form-label-top {
+  vertical-align: top;
+  position: relative;
+  top: 7px;
+}
+
+.form-m20 fieldset{
+  padding-bottom: 20px;
+}
+.form-m15 fieldset {
+  padding-bottom: 15px;
+}

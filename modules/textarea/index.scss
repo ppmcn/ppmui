@@ -1,12 +1,15 @@
+@import "../../theme/index.scss";
+
 /*
 * Config
 */
 
 $textarea-namespace: '.textarea' !default;
-$textarea-width: 468px !default;
-$textarea-height: 103px !default;
+$textarea-width: 400px !default;
+$textarea-height: 110px !default;
 $textarea-padding: 10px !default;
-$textarea-border-color: #E1E1E1 !default;
+$textarea-border-color: $input-border-color !default;
+$textarea-border-width: 1px;
 $textarea-colors: (blue $blue) (green $green) (orange $orange) !default;
 
 /*
@@ -31,10 +34,10 @@ $textarea-colors: (blue $blue) (green $green) (orange $orange) !default;
   border: 0;
   outline: none;
   overflow: auto;
-  border: 1px solid $textarea-border-color;
+  border: $textarea-border-width solid $textarea-border-color;
   padding: $textarea-padding;
-  width: $textarea-width;
-  min-height: $textarea-height;
+  width: $textarea-width - $textarea-padding*2 - $textarea-border-width*2;
+  min-height: $textarea-height - $textarea-padding*2 - $textarea-border-width*2;
 }
 
 #{$textarea-namespace}:hover {
@@ -48,9 +51,10 @@ $textarea-colors: (blue $blue) (green $green) (orange $orange) !default;
 
 #{$textarea-namespace}[disabled],
 #{$textarea-namespace}-disabled {
-  background-color: $disabled;
-  border: 1px solid $disabled;
-  color: #fff;
+  background: $input-disabled !important;
+  border-color: #dcdcdc !important;
+  color: #999 !important;
+  cursor: not-allowed;
 }
 
 #{$textarea-namespace}[disabled]:hover,

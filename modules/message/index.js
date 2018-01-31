@@ -37,11 +37,23 @@ function error(msg) {
   }, 2300)
 }
 
+function success(msg) {
+  var boxClass = 'ppmui-success';
+
+  _clear();
+
+  $('body').after('<div class="' + boxClass + '"><i class="ppmui-success-icon"></i><p>' + msg + '</p></div>');
+  clearTime = setTimeout(function () {
+    _clear();
+  }, 2300);
+}
+
 function _clear() {
   clearTimeout(clearTime)
-  $('.ppmui-msg, .ppmui-info, .ppmui-error').remove()
+  $('.ppmui-msg, .ppmui-info, .ppmui-error, .ppmui-success').remove()
 }
 
 ppmui.msg = msg;
 ppmui.info = info;
 ppmui.error = error;
+ppmui.success = success;

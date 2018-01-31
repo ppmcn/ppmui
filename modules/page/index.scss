@@ -49,6 +49,9 @@ $page-size: 24px;
   margin-right: 0;
   margin-left: -#{$page-border-width};
 }
+.page > span {
+  vertical-align: middle;
+}
 
 .page .page-prev i,
 .page .page-next i {
