@@ -16,6 +16,15 @@
 <br><br><span><i class="icon-16 icon-right margin-right-5"></i>你好图标</span>
 ```
 
+## icon-18
+
+```html
+<i class="icon-18 icon-notebook"></i>
+<i class="icon-18 icon-pencli"></i>
+
+<br><br><span><i class="icon-18 icon-notebook margin-right-5"></i>你好图标</span>
+```
+
 ## icon-24
 
 ```html
@@ -42,6 +51,7 @@
 <a href="#" class="icon-26 icon-down"></a>
 <a href="#" class="icon-26 icon-up"></a>
 <a href="#" class="icon-26 icon-del"></a>
+<a href="#" class="icon-26 icon-add"></a>
 
 <i class="icon-26 icon-right"></i>
 ```

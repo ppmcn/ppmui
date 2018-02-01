@@ -101,8 +101,6 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-__webpack_require__(59);
-
 __webpack_require__(16);
 
 __webpack_require__(17);
@@ -111,15 +109,17 @@ __webpack_require__(18);
 
 __webpack_require__(19);
 
-__webpack_require__(21);
+__webpack_require__(20);
 
 __webpack_require__(22);
 
 __webpack_require__(23);
 
-__webpack_require__(25);
+__webpack_require__(24);
 
-__webpack_require__(27);
+__webpack_require__(26);
+
+__webpack_require__(28);
 
 /***/ }),
 /* 2 */
@@ -230,24 +230,24 @@ __webpack_require__(7);
 
 /***/ }),
 /* 19 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(20);
+__webpack_require__(21);
 
 $(function () {
   $('body').on('change', '.select select', function () {
     $(this).blur();
   });
 });
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 21 */
@@ -257,6 +257,12 @@ $(function () {
 
 /***/ }),
 /* 22 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 23 */
 /***/ (function(module, exports) {
 
 function h(name, props) {
@@ -551,13 +557,13 @@ window.hyperapp = {
 };
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(24);
+__webpack_require__(25);
 
 $.fn.extend({
   modal: function modal(config) {
@@ -627,19 +633,19 @@ $(function () {
 });
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(26);
+__webpack_require__(27);
 
 typeof ppmui == 'undefined' && (window.ppmui = {});
 var clearTime = '';
@@ -649,7 +655,7 @@ function msg(msg) {
 
   _clear();
 
-  $('body').after('<div class="' + boxClass + '">' + msg + '</div>');
+  $('body').append('<div class="' + boxClass + '">' + msg + '</div>');
   clearTime = setTimeout(function () {
     _clear();
   }, 2300);
@@ -660,7 +666,7 @@ function info(msg) {
 
   _clear();
 
-  $('body').after('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
+  $('body').append('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
   clearTime = setTimeout(function () {
     _clear();
   }, 2300);
@@ -671,7 +677,7 @@ function error(msg) {
 
   _clear();
 
-  $('body').after('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
+  $('body').append('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
   clearTime = setTimeout(function () {
     _clear();
   }, 2300);
@@ -682,7 +688,7 @@ function success(msg) {
 
   _clear();
 
-  $('body').after('<div class="' + boxClass + '"><i class="ppmui-success-icon"></i><p>' + msg + '</p></div>');
+  $('body').append('<div class="' + boxClass + '"><i class="ppmui-success-icon"></i><p>' + msg + '</p></div>');
   clearTime = setTimeout(function () {
     _clear();
   }, 2300);
@@ -699,19 +705,19 @@ ppmui.error = error;
 ppmui.success = success;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(28);
+__webpack_require__(29);
 
 typeof ppmui == 'undefined' && (window.ppmui = {});
 var clearTime = '';
@@ -751,43 +757,7 @@ function _clear() {
 ppmui.loading = loading;
 
 /***/ }),
-/* 28 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */
+/* 29 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -6,7 +6,7 @@ $table-border-width: 1px;
   width: 100%;
   color: #333;
   font-size: 14px;
-  border:$table-border-width solid #e2e9f0;
+  border:$table-border-width solid #DDDEE1;
   background-color: #fff;
   text-align: left;
 }
@@ -21,8 +21,8 @@ $table-border-width: 1px;
 #{$table-namespace} th {
   padding: 10px 0 10px 20px;
   color: #333;
-  background-color: #F4F7FA;
-  border-bottom: 1px solid #e2e9f0;
+  background-color: #F2F2F2;
+  border-bottom: 1px solid #DDDEE1;
 }
  #{$table-namespace} td{
   padding: 10px 0 10px 20px;
@@ -32,5 +32,5 @@ $table-border-width: 1px;
 
 
 #{$table-namespace} tbody tr{
-  border-bottom: 1px solid #e2e9f0;
+  border-bottom: 1px solid #DDDEE1;
 }

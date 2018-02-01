@@ -64,3 +64,11 @@
 .ppmui-success p{
   padding-top: 4px;
 }
+
+.ppmui-loading .ppmui-message-status {
+  display: inline-block;
+  width: 34px;
+  height: 12px;
+  padding-right: 10px;
+  background: url('./images/loading.gif') no-repeat 0 0;
+}

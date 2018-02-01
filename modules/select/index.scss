@@ -11,6 +11,7 @@
   padding: 0 0px 0 10px;
   border-radius: 3px;
   overflow: hidden;
+  background-color: #fff;
   // background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
 }
 
@@ -94,8 +95,11 @@
 
 // 禁用状态
 .select-disabled {
-  background-color: #eee;
+  // background-color: #eee;
 }
 .select-disabled:hover {
   // border-color: $input-border-color;
+}
+.select-disabled::after {
+  display: none;
 }

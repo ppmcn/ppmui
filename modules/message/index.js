@@ -8,7 +8,7 @@ function msg(msg) {
   var boxClass = 'ppmui-msg';
   _clear()
 
-  $('body').after('<div class="' + boxClass + '">' + msg + '</div>');
+  $('body').append('<div class="' + boxClass + '">' + msg + '</div>');
 
   clearTime = setTimeout(function () {
     _clear()
@@ -19,7 +19,7 @@ function info(msg) {
   var boxClass = 'ppmui-info';
   _clear()
 
-  $('body').after('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
+  $('body').append('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
 
   clearTime = setTimeout(function () {
     _clear()
@@ -30,7 +30,7 @@ function error(msg) {
   var boxClass = 'ppmui-error';
   _clear()
 
-  $('body').after('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
+  $('body').append('<div class="' + boxClass + '"><i class="ppmui-message-status"></i>' + msg + '</div>');
 
   clearTime = setTimeout(function () {
     _clear()
@@ -42,7 +42,7 @@ function success(msg) {
 
   _clear();
 
-  $('body').after('<div class="' + boxClass + '"><i class="ppmui-success-icon"></i><p>' + msg + '</p></div>');
+  $('body').append('<div class="' + boxClass + '"><i class="ppmui-success-icon"></i><p>' + msg + '</p></div>');
   clearTime = setTimeout(function () {
     _clear();
   }, 2300);
